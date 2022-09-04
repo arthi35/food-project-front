@@ -13,7 +13,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-sm shadow-lg p-3  mb-5 text-white rounded  navvv">
                 <a className="navbar-brand text-white"  href="/">
-                    DNC FOOD SHOP
+                RT PIZZA
                 </a>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
