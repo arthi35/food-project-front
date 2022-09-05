@@ -7,7 +7,7 @@ export const placeOrder = (token, subtotal) =>async (dispatch, getState) => {
 
     try {
 
-        const response = await axios.post('https://food-project-back.herokuapp.com/api/orders/placeorder', { token, subtotal, currentUser, cartItems })
+        const response = await axios.post('https://foodcart001.herokuapp.com/api/orders/placeorder', { token, subtotal, currentUser, cartItems })
         dispatch({ type: 'PLACE_ORDER_SUCCESS' })
         console.log(response)
 
