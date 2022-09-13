@@ -47,8 +47,8 @@ export default function Loginscreen() {
             <a style={{color:'black'}}  href="/register">Click Here To Register</a>
             
             
-            <p style={{margin:'20px',color:'blue'}}>Username: hellouser@gmail.com</p>
-            <p style={{marginLeft:'18px',color:'blue'}}>Password: hellouser123</p>
+            <p style={{margin:'20px',color:'blue',fontFamily:'monospace'}}>Username: hellouser@gmail.com</p>
+            <p style={{marginLeft:'18px',color:'blue',fontFamily:'monospace'}}>Password: hellouser123</p>
           </div>
         </div>
 
