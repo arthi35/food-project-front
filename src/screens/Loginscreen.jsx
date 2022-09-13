@@ -45,6 +45,10 @@ export default function Loginscreen() {
             <button onClick={login} className='btn my-3 '>LOGIN</button>
             <br />
             <a style={{color:'black'}}  href="/register">Click Here To Register</a>
+            
+            
+            <p style={{margin:'20px',color:'blue'}}>Username: hellouser@gmail.com</p>
+            <p style={{marginLeft:'18px',color:'blue'}}>Password: hellouser123</p>
           </div>
         </div>
 
