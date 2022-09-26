@@ -41,7 +41,7 @@ export default function Loginscreen() {
            
           <div>
             <input type="text" required placeholder='email' className='form-control' value={email} onChange={(e) => { setemail(e.target.value) }} />
-            <input type="text" required placeholder='password' className='form-control' value={password} onChange={(e) => { setpassword(e.target.value) }} />
+            <input type="password" required placeholder='password' className='form-control' value={password} onChange={(e) => { setpassword(e.target.value) }} />
             <button onClick={login} className='btn my-3 '>LOGIN</button>
             <br />
             <a style={{color:'black'}}  href="/register">Click Here To Register</a>
