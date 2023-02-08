@@ -5,7 +5,8 @@ export const registerUser = (user) => async dispatch => {
     dispatch({ type: 'USER_REGISTER_REQUEST' })
 
     try {
-        const response = await axios.post('https://foodcart001.herokuapp.com/api/users/register', user)
+        //https://hellofood001.onrender.com
+        const response = await axios.post('https://foodcart001.onrender.com/api/users/register', user)
         console.log(response)
         dispatch({ type: 'USER_REGISTER_SUCCESS' })
         window.location.href="/login"
@@ -21,7 +22,8 @@ export const loginUser=(user)=> async dispatch => {
     dispatch({ type: 'USER_LOGIN_REQUEST' })
 
     try {
-        const response = await axios.post('https://foodcart001.herokuapp.com/api/users/login', user)
+        //https://foodcart001.herokuapp.com
+        const response = await axios.post('https://foodcart001.onrender.com/api/users/login', user)
         console.log(response)
         dispatch({ type:'USER_LOGIN_SUCCESS', payload:response.data })
         localStorage.setItem('currentUser' ,JSON.stringify(response.data))
@@ -46,7 +48,7 @@ export const getAllUsers=()=>async dispatch=>{
 
     try {   
         
-        const response=await axios.get('https://foodcart001.herokuapp.com/api/users/usersall') 
+        const response=await axios.get('https://foodcart001.onrender.com/api/users/usersall') 
         console.log(response)
         dispatch({type:'GET_USERS_SUCCESS', payload : response.data})
        
